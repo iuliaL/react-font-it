@@ -1,7 +1,7 @@
 ## React Font It 
 
-This package is a rewrite of this one [react-font-face](https://github.com/ojdx/react-font-face)
-It is package for your React components in order to use custom fonts, icon fonts or Google imported fonts.
+This package is a rewrite of this one [react-font-face](https://github.com/ojdx/react-font-face).
+It is a package for your React components in order to use custom fonts, icon fonts or Google imported fonts.
 It uses [react-helmet](https://github.com/nfl/react-helmet) to inject the font-face declarations into the head of your app entry point.  
 
 ### Usage
@@ -11,9 +11,6 @@ Install and save to your environment using the terminal.
 ```bash
 npm install react-font-it -S
 ```
-
-Import the package in your app. 
-
 
 Wrap your component in the higher order component wherever you export the component.  You will also need to pass in an config object using Google Fonts or your own font files or both.
 
