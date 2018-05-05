@@ -1,0 +1,124 @@
+//
+// /* tslint:disable-next-line:no-expression-statement */
+//
+
+{
+	"extends": [
+		"tslint-immutable",
+		"tslint-eslint-rules"
+	],
+	"rulesDirectory": "./tslint-custom-rules",
+	"rules": {
+		// Immutability rules
+		"readonly-keyword": true,
+		"readonly-array": true,
+		"no-let": true,
+		"no-var-keyword": true,
+		"no-object-mutation": true,
+		"no-parameter-reassignment": true,
+		// "no-shadowed-variable": true,
+ 
+		// Other purity rules
+		"no-unused-expression": true,
+		"no-void-expression": true,
+		"prefer-conditional-expression": true,
+		"no-import-side-effect": true,
+		"prefer-object-spread": true,
+
+		// Functional style rules
+		"no-this": true,
+		"no-class": true,
+		"no-expression-statement": true,
+		"triple-equals": true,
+
+		// strong-typing rules
+		"typedef": [
+			true,
+			"call-signature",
+			"arrow-call-signature",
+			"parameter",
+			"arrow-parameter",
+			"property-declaration",
+			// "variable-declaration",  <= This will have to be activated, otherwise we lose typings
+			"member-variable-declaration",
+			"object-destructuring",
+			"array-destructuring"
+		],
+		// "no-unsafe-any": true,
+		"no-any": true,
+		"no-require-imports": true,
+
+		// Code formatting
+		"max-line-length": [true, 100],
+		"curly": true,
+		"object-literal-key-quotes": [true, "as-needed"],
+		"comment-format": [ true, "check-space" ],
+		"indent": [ true, "tabs", 2 ],
+		"no-trailing-whitespace": true,
+		"no-unnecessary-callback-wrapper": true,
+		"one-variable-per-declaration": true,
+		"prefer-template": true,
+		"arrow-parens": true,
+		"arrow-return-shorthand": true,
+		"no-angle-bracket-type-assertion": true,
+		"import-spacing": true,
+		"semicolon": true,
+		"type-literal-delimiter": true,
+		"whitespace": [
+			true,
+			"check-branch",
+			"check-decl",
+			"check-operator",
+			"check-module",
+			"check-separator",
+			"check-rest-spread",
+			"check-type",
+			"check-typecast",
+			"check-type-operator",
+			"check-preblock"
+		],
+		"no-unnecessary-type-assertion": true,
+		"use-default-type-parameter": true,
+		"linebreak-style": [true, "LF"],
+		"align": [
+			true,
+			"arguments",
+			"elements",
+			"members",
+			"parameters",
+			"statements"
+		],
+		"no-conditional-assignment": true,
+		"space-before-function-paren": [
+			true,
+			{
+				"anonymous": "always",
+				"named": "never",
+				"asyncArrow": "always"
+			}
+		],
+		"typedef-whitespace": [
+			true,
+			{
+				"call-signature": "nospace",
+				"index-signature": "nospace",
+				"parameter": "nospace",
+				"property-declaration": "nospace",
+				"variable-declaration": "nospace"
+			},
+			{
+				"call-signature": "onespace",
+				"index-signature": "onespace",
+				"parameter": "onespace",
+				"property-declaration": "onespace",
+				"variable-declaration": "onespace"
+			}
+		],
+		"space-within-parens": false,
+		"no-shadowed-variable": true,
+		"prefer-export-statement": true,
+		"prefer-function-declaration-for-named-functions": true,
+		"prefer-switch-blocked-cases": true,
+		"object-curly-spacing": true
+	}
+}

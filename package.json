@@ -1,0 +1,45 @@
+{
+  "name": "react-font-it",
+  "version": "1.0.0",
+  "description": "A package for your React components in order to use custom fonts, icon fonts or Google imported fonts",
+  "main": "dist/react-font-it.js",
+  "types": "dist/src/index.d.ts",
+  "module": "dist/react-font-it.js",
+  "scripts": {
+    "build": "rm -rf ./dist && webpack --config webpack.config.js --env.build --env.sourceMap",
+    "build-dev": "rm -rf ./dist && webpack-dashboard -- webpack --config webpack.config.js --env.sourceMap",
+    "watch": "webpack-dashboard -m -- webpack-dev-server --config webpack.config.js --open",
+    "server": "web-server -r ./dist",
+    "tslint": "tslint --project .",
+    "compile-tslint-rules": "tsc tslint-custom-rules/*"
+  },
+  "author": "Iulia Lungu <iuliamarialungu@yahoo.com>",
+  "license": "ISC",
+  "sideEffects": false,
+  "dependencies": {
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-helmet": "^5.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.3.13",
+    "@types/react-dom": "^16.0.5",
+    "@types/react-helmet": "^5.0.6",
+    "html-webpack-plugin": "^2.30.1",
+    "html-webpack-react-root-plugin": "^0.9.0",
+    "ts-loader": "^3.1.1",
+    "ts-node": "^4.1.0",
+    "tslib": "^1.8.0",
+    "tslint": "^5.8.0",
+    "tslint-eslint-rules": "^4.1.1",
+    "tslint-immutable": "^4.4.0",
+    "tslint-loader": "^3.5.3",
+    "tsmonad": "^0.8.0",
+    "typedoc": "^0.11.1",
+    "typescript": "^2.6.1",
+    "web-server-cli": "^2.0.2",
+    "webpack": "^3.8.1",
+    "webpack-dashboard": "^1.1.1",
+    "webpack-dev-server": "^2.9.4"
+  }
+}
