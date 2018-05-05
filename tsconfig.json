@@ -1,5 +1,3 @@
-// Note: these options cannot be changed without consensus. 
-
 {
     "compilerOptions": {
         // Type-system strictness
