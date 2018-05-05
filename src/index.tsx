@@ -17,7 +17,7 @@ function ReactFontIt<TOriginalProps extends {}>(
 	WrappedComponent: React.SFC<TOriginalProps>,
 	config: Config
 ): React.SFC<TOriginalProps> {
-	return function FontIt(props: TOriginalProps): JSX.Element {
+	const FontIt = (props: TOriginalProps): JSX.Element => {
 		if (!config.google && !config.file) {
 			throw Error('no fonts configured for react-font-face');
 		} else {
@@ -72,4 +72,5 @@ function ReactFontIt<TOriginalProps extends {}>(
 			);
 		}
 	};
+	return FontIt;
 }
