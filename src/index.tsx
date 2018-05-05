@@ -3,9 +3,10 @@ import { Helmet } from 'react-helmet';
 import { Maybe } from 'tsmonad';
 
 export {
-	ReactFontIt,
 	Config
 };
+
+export default ReactFontIt;
 
 interface Config {
 	readonly google?: ReadonlyArray<string>;
@@ -17,7 +18,7 @@ function ReactFontIt<TOriginalProps extends {}>(
 	WrappedComponent: React.SFC<TOriginalProps>,
 	config: Config
 ): React.SFC<TOriginalProps> {
-	const FontIt = (props: TOriginalProps): JSX.Element => {
+	return function FontIt(props: TOriginalProps): JSX.Element {
 		if (!config.google && !config.file) {
 			throw Error('no fonts configured for react-font-face');
 		} else {
@@ -72,5 +73,4 @@ function ReactFontIt<TOriginalProps extends {}>(
 			);
 		}
 	};
-	return FontIt;
 }
