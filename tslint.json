@@ -116,7 +116,6 @@
 		],
 		"space-within-parens": false,
 		"no-shadowed-variable": true,
-		"prefer-export-statement": true,
 		"prefer-function-declaration-for-named-functions": true,
 		"prefer-switch-blocked-cases": true,
 		"object-curly-spacing": true
