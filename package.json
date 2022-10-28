@@ -39,7 +39,7 @@
     "typescript": "^2.6.1",
     "web-server-cli": "^2.0.2",
     "webpack": "^3.8.1",
-    "webpack-dashboard": "^1.1.1",
+    "webpack-dashboard": "^3.3.7",
     "webpack-dev-server": "^2.9.4"
   }
 }
